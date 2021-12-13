@@ -7,4 +7,4 @@ with open('honor.csv', 'r') as file:
 	for row in csvreader:
 		images = row[1].split(' , ')
 		for img in images:
-			os.system('wget ' + img + ' $');
+			os.system('wget --page-requisites --no-host-directories ' + img + ' $');
